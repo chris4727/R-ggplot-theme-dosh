@@ -1,7 +1,26 @@
 library(tidyverse)
 library(ggplot2)
+library(systemfonts)
 
 source("./code/00-ggplot-theme-dosh.R")
+theme_set(theme_dosh())
+
+# SYSTEM FONTS ------------------------------------------------------------
+
+#fonts <- system_fonts() |> 
+#  select(!c(path, index)) |> 
+#  mutate(
+#    style = case_when(
+#      str_detect(family, regex("Serif", ignore_case = TRUE)) ~ "serif",
+#      str_detect(family, regex("Sans", ignore_case = TRUE)) ~ "sans",
+#    )
+#  )
+
+## FONT SEARCH
+#fonts |> 
+#  filter(
+#    str_detect(family, regex("SEARCH", ignore_case = TRUE))
+#  )
 
 # EXAMPLE CHART -----------------------------------------------------------
 
