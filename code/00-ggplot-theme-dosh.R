@@ -45,3 +45,25 @@ theme_dosh <- function() {
     axis.ticks.length.x = unit(4, units = "pt")
   )  
 }
+
+colors_lni <- c(
+  "#093678",
+  "#169caa",
+  "#00674e",
+  "#9fa617",
+  "#ffbf0f",
+  "#f3901d",
+  "#c41200"
+)
+  
+
+
+
+
+
+
+
+
+
+
+
