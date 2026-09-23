@@ -26,7 +26,7 @@ theme_set(theme_dosh())
 
 # Example taken from R for Data Science 2e 11.5
 # https://r4ds.hadley.nz/communication.html#sec-themes
-default_plot <- mpg |> 
+plot1 <- mpg |> 
   ggplot(aes(x = displ, y = hwy)) +
     geom_point(aes(color = class)) +
     geom_smooth(se = FALSE) +
@@ -40,8 +40,7 @@ default_plot <- mpg |>
 
 # Example taken from R for the rest of us: Ggplot theme
 # https://rfortherestofus.com/2025/04/ggplot2-theme
-default_plot <- ggplot(economics, aes(date, unemploy)) +
-  geom_line() +
+plot2 <- ggplot(economics, aes(date, unemploy)) +
   labs(
     title = "Unemployed persons in the United States",
     subtitle = "Monthly aggregation from 1967 - 2015",
@@ -60,18 +59,18 @@ default_plot <- ggplot(economics, aes(date, unemploy)) +
     limits = c(0, max(economics$unemploy))
   )
 
-
-# GENERATE VISUALIZATION --------------------------------------------------
-
-example_plot <- default_plot +
-  theme_dosh()
-
 # SAVE FIGURE -------------------------------------------------------------
 
 ggsave("./figures/plot-ex.png",
-       plot = example_plot,
+       plot = plot1,
        #width = 1280,
        #height = 640,
        #units = "px"
        )
 
+ggsave("./figures/plot-ex2.png",
+       plot = plot2,
+       #width = 1280,
+       #height = 640,
+       #units = "px"
+       )
