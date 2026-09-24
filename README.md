@@ -28,3 +28,6 @@ mpg |>
 
 ![](./figures/plot-ex.png)
 
+Example 2:
+![](./figures/plot-ex2.png)
+
