@@ -1,0 +1,47 @@
+meta:
+  name: 
+    full: "Washington State Department of Labor & Industries"
+    short: "L&I DOSH"
+  link: 
+    website: "https://www.lni.wa.gov/"
+    github: "https://github.com/chris4727/R-ggplot-theme-dosh"
+  
+logo:
+  small:
+    light: "./logo/logo-small.png"
+
+color:
+  palette: 
+    black: "#000000"
+    white: "#ffffff"
+    blue: "#093678"
+    cyan: "#169caa"
+    #greendk: "#00674e"
+    green: "#9fa617"
+    yellow: "#ffbf0f"
+    orange: "#f3901d"
+    red: "#c41200"
+  background: white
+  foreground: black
+  primary: blue
+  secondary: cyan
+  warning: yellow
+  danger: red
+ 
+typography:
+  fonts:
+    - family: Roboto
+      source: bunny
+    - family: Libertinus Serif
+      source: bunny
+    - family: Fira Code
+      source: bunny
+  base: Roboto
+  headings:
+    family: Roboto
+    weight: 600
+    color: black
+  monospace: Fira Code
+  link:
+    color: primary
+    decoration: none
