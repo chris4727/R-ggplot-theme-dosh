@@ -38,3 +38,8 @@ Example 1:
 Example 2:
 ![](./figures/plot-ex2.png)
 
+# Brand.yml
+
+Add the `_brand.yml` file to the rood directory of your project. Quarto
+will apply the options in the file to any document created.
+
