@@ -13,6 +13,7 @@ logo:
 color:
   palette: 
     black: "#000000"
+    grey: "#414142" # Logo text, headings
     white: "#ffffff"
     blue: "#093678"
     cyan: "#169caa"
@@ -21,6 +22,8 @@ color:
     yellow: "#ffbf0f"
     orange: "#f3901d"
     red: "#c41200"
+    reddk: "#7f0600"
+    brown: "#5c2901"
   background: white
   foreground: black
   primary: blue
@@ -40,7 +43,7 @@ typography:
   headings:
     family: Roboto
     weight: 600
-    color: black
+    color: grey
   monospace: Fira Code
   link:
     color: primary
